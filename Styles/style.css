@@ -383,7 +383,7 @@ a:hover .card-title span{
         color:#A7D1D2 ;
         text-decoration: none;
 
-        font-family: "Open Sans", sans-serif !important;
+        font-family: "Open Sans", sans-serif;
         font-size: 20px;
         font-weight: 500;        
         transition: 0.5s;
