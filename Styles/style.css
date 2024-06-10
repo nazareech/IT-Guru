@@ -94,21 +94,23 @@ a.nav-link{
 }
 .texting {
     h2{
-        font-size: clamp(1.125rem, 0.6989rem + 1.1364vw, 2.0625rem);
+        font-size: clamp(0.9375rem, 0.6414rem + 1.1842vw, 2.0625rem);
+        /* font-size: clamp(1.125rem, 0.6989rem + 1.1364vw, 2.0625rem); */
         color: #033540;
         text-shadow: 5px 4px 8px #63898C;
     } 
     h5{
-        font-size: clamp(0.8125rem, 0.6136rem + 0.5303vw, 1.25rem);
+        font-size: clamp(0.5625rem, 0.3816rem + 0.7237vw, 1.25rem);
+        /* font-size: clamp(0.8125rem, 0.6136rem + 0.5303vw, 1.25rem); */
         color: #033540;
         text-shadow: 5px 4px 8px #63898C;
     }
     transition: 0.5s linear;
 }
 
-@media (max-width: 991px){
+@media (max-width: 640px){
     .carousel-caption{
-        transform: translateY(-10%);
+        transform: translateY(-30%);
     }
 }
 
@@ -383,7 +385,7 @@ a:hover .card-title span{
         color:#A7D1D2 ;
         text-decoration: none;
 
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", sans-serif !important;
         font-size: 20px;
         font-weight: 500;        
         transition: 0.5s;
