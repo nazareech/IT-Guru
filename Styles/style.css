@@ -95,20 +95,20 @@ a.nav-link{
 .texting {
     h2{
         font-size: clamp(1.125rem, 0.6989rem + 1.1364vw, 2.0625rem);
-    color: #033540;
-    text-shadow: 5px 4px 8px #63898C;
+        color: #033540;
+        text-shadow: 5px 4px 8px #63898C;
     } 
     h5{
         font-size: clamp(0.8125rem, 0.6136rem + 0.5303vw, 1.25rem);
-    color: #033540;
-    text-shadow: 5px 4px 8px #63898C;
+        color: #033540;
+        text-shadow: 5px 4px 8px #63898C;
     }
     transition: 0.5s linear;
 }
 
 @media (max-width: 991px){
     .carousel-caption{
-        transform: translateY(2%);
+        transform: translateY(-10%);
     }
 }
 
@@ -228,7 +228,7 @@ a:hover .card-title span{
 
 /*Картинки*/
 #fixed-pic-1 {
-    height: 300px;
+    height: 270px;
     border-top: 4px solid #033540;
     border-bottom: 4px solid #033540;
     background: url("../img/Pictures/pic-01.webp") no-repeat center center fixed;
@@ -238,7 +238,7 @@ a:hover .card-title span{
     -moz-background-size: cover;
 }
 #fixed-pic-2 {
-    height: 300px;
+    height: 270px;
     width: 90vw;
     margin-left: 5vw;
     border: 4px solid #033540;
@@ -250,7 +250,7 @@ a:hover .card-title span{
     -moz-background-size: cover;
 }
 #fixed-pic-3 {
-    height: 300px;
+    height: 270px;
     border-top: 4px solid #033540;
     border-bottom: 4px solid #033540;
     background: url("../img/Pictures/pic-03.webp") no-repeat center center fixed;
@@ -261,12 +261,11 @@ a:hover .card-title span{
 }
 .condensatory{
     float: right;
-    margin: 20px;
-    width: 16vw;
+    margin: 10px 56px 10px 65px;
 }
 
 #fixed-pic-4 {
-    height: 300px;
+    height: 270px;
     width: 90vw;
     margin-left: 5vw;
     border: 4px solid #033540;
@@ -278,7 +277,7 @@ a:hover .card-title span{
     -moz-background-size: cover;
 }
 #fixed-pic-5 {
-    height: 300px;
+    height: 270px;
     width: 90vw;
     margin-left: 5vw;
     border: 4px solid #033540;
@@ -290,7 +289,7 @@ a:hover .card-title span{
     -moz-background-size: cover;
 }
 #fixed-pic-6 {
-    height: 300px;
+    height: 270px;
     border: 4px solid #033540;
     
     background: url("../img/Pictures/pic-06.webp") no-repeat center center fixed;
@@ -311,7 +310,7 @@ a:hover .card-title span{
 }
 
 #fixed-pic-7 {
-    height: 300px;
+    height: 270px;
     border: 4px solid #033540;
     
     background: url("../img/Pictures/pic-07.webp") no-repeat center center fixed;
@@ -321,7 +320,7 @@ a:hover .card-title span{
     -moz-background-size: cover;
 }    
 #fixed-pic-8 {
-    height: 300px;
+    height: 270px;
     width: 90vw;
     margin-left: 5vw;
     border: 4px solid #033540;
@@ -370,7 +369,28 @@ a:hover .card-title span{
     margin: 20px 0px 0px 30px;
 }
 
+
 .podval{
-    height: 250px;
-    background: #033540;
+    background-color:#033540; 
+    height: 150px;
+    padding: 60px 0px;
+
+    
+    text-align: center;
+
+    a{
+        margin-left: 10px;
+        color:#A7D1D2 ;
+        text-decoration: none;
+
+        font-family: "Open Sans", sans-serif !important;
+        font-size: 20px;
+        font-weight: 500;        
+        transition: 0.5s;
+    }
+
+    a:hover{
+        color: #E0F4F5;
+        text-shadow: 0px 0px 15px #E0F4F5;
+    }
 }
