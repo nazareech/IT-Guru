@@ -1,0 +1,141 @@
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+
+}
+.video-bg{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+    justify-content: center;
+    /* align-items: center;*/
+    display: flex;
+    position: relative;
+}
+.video-bg video {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.container-lg{
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+   width: 768px;
+   padding: 80px 60px 100px;
+   background:   rgba(99, 137, 140, 0.3);
+   backdrop-filter: blur(3.4px);
+   border: 1px solid rgba(3, 53, 64, 0.3);
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: #E0F4F5;
+    text-transform: uppercase;
+}
+.data-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    margin-top: 55px;
+}
+
+input{
+    background: transparent;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #E0F4F5;
+    padding-left: 20px;
+}
+input::placeholder{
+    font-size: 24px;
+    color: #015366;
+}
+input:focus::placeholder{
+    color: #63898C;
+}
+input:focus{
+    outline: none;
+}
+.name{
+    width: 100%;
+}
+.mail{
+    width: 45%;
+}
+.phone{
+    width: 45%;
+}
+
+.text-area{
+    margin-top: 65px;
+    border: 1px solid #E0F4F5;
+    border-radius: 13px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.send{
+    font-size: 24px;
+    color: #015366;
+}
+
+textarea{
+    color: #015366;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+textarea:focus::placeholder{
+    color: #63898C;
+}
+textarea:focus{
+    outline: none;
+}
+
+.send{
+    width: 100%;
+    text-align: right;
+}
+
+.button {
+    padding:0px 3px 2px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #033540;
+    border-radius: 5px;
+    border:1px solid #033540;
+    background: rgba(1, 83, 102, 0.3);
+    margin-top: 40px;
+
+    transition: 0.3s;
+}
+.button:hover{
+    background: #015366;
+    color: #63898C;
+}

@@ -1,0 +1,376 @@
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Montserrat*/
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    background-color: #015366;
+}
+
+
+/*Заголовок*/
+.navbar{
+    background-color: #E0F4F5;
+    
+    .Language{
+        text-align: center;
+        padding: 0px 20px;
+        color:  #E0F4F5 !important;
+    
+        text-decoration: none;
+        text-align: center;
+        
+        font-family: "Open Sans", sans-serif !important;
+        font-size: 20px;
+        font-weight: 500 !important;
+        
+        margin-top: 2px;    
+        border-radius: 20px;
+        background: #015366;
+
+        transition: 0.3s;
+    }
+    .header__btn{
+        margin-top: 3px;
+        color:  #E0F4F5;
+        background: #015366;
+        padding: 0px 45px;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+a.nav-link{    
+    color:  #E0F4F5 !important;
+    
+    text-decoration: none;
+    text-align: center;
+    
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 20px;
+    font-weight: 500 !important;
+    
+    margin-top: 3px;    
+    padding: 5px 20px !important;
+    border-radius: 20px;
+    background: #015366;
+    
+    transition: color 0.3s linear;
+    transition: background-color 0.5s linear;
+}
+.Language:hover{
+    background-color: #A7D1D2;
+    color: #015366 !important;
+}
+.nav-link:hover{
+    background-color: #A7D1D2;
+    color: #015366 !important;
+}
+.header__btn:hover{
+    background-color: #A7D1D2;
+    color: #015366 !important;
+}
+
+/*Заголовок-end*/
+
+
+/*Карусел, карусел... Кто успел, тот присел..*/
+.carousel-caption{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    transform: translateY(25%);
+}
+.texting {
+    h2{
+        font-size: clamp(1.125rem, 0.6989rem + 1.1364vw, 2.0625rem);
+    color: #033540;
+    text-shadow: 5px 4px 8px #63898C;
+    } 
+    h5{
+        font-size: clamp(0.8125rem, 0.6136rem + 0.5303vw, 1.25rem);
+    color: #033540;
+    text-shadow: 5px 4px 8px #63898C;
+    }
+    transition: 0.5s linear;
+}
+
+@media (max-width: 991px){
+    .carousel-caption{
+        transform: translateY(2%);
+    }
+}
+
+
+/*Карусел-end*/
+
+
+/*Тут вже Карточки */
+#card {
+    background-color:  #A7D1D2;    
+    padding: 40px 20px 40px 20px;
+    border-radius: 23px;
+    border: solid 15px #015366;    
+
+    a{
+        text-decoration: none;
+    }
+}
+
+a .icon{
+	max-width: 130px;
+	height: 130px;
+	text-align: center;
+	margin: 0 auto 10px;
+	overflow: hidden;
+}
+a .icon img{
+	transition: 0.5s;
+}
+/*моджна змінити напрямок висування*/
+a .icon img:last-child{
+	transform: translateY( -200%);
+}
+
+a:hover img{
+	transform: translateY(100%);
+}
+a:hover .icon img:last-child{
+	transform: translateY(-100%);
+}
+
+a .card-title{
+	position: relative;
+	height: 20px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+a .card-text{
+    text-decoration: none;
+    text-align: center;
+	position: relative;
+    
+	color: #033540;
+	font-size: 1em;
+	display: block;
+	line-height: 20px;
+	transition: 0.5s;
+}
+a .card-title span:last-child{
+	transform: translateY( 200%);
+}
+
+a:hover span{
+	transform: translateY(-100%);
+}
+a:hover .card-title span:last-child{
+	transform: translateY(-100%);
+}
+a:hover{
+    .card-text{ 
+    color: #A7D1D2;
+    text-shadow: 0px 0px 7px #033540;
+    }
+}
+/*
+a .card-title span::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    text-shadow: 0px 0px 5px #033540;
+	color: #A7D1D2;
+}
+a:hover .card-title span{
+	transform: translateY(-20px);
+}
+*/
+
+
+/*Відступи*/
+.marging-1{
+    margin: 120px;
+}
+
+.marging{
+    margin: 90px;
+}
+
+
+/*ХАроші сторони*/
+.text-zalety{
+
+    border-radius: 15px;
+    background-color: #033540;
+    color: #E0F4F5;
+    padding: 6vh 5vw;
+
+    .lead, h2{
+        text-align: center;
+    }
+}
+
+/*Картинки*/
+#fixed-pic-1 {
+    height: 300px;
+    border-top: 4px solid #033540;
+    border-bottom: 4px solid #033540;
+    background: url("../img/Pictures/pic-01.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+#fixed-pic-2 {
+    height: 300px;
+    width: 90vw;
+    margin-left: 5vw;
+    border: 4px solid #033540;
+    
+    background: url("../img/Pictures/pic-02.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+#fixed-pic-3 {
+    height: 300px;
+    border-top: 4px solid #033540;
+    border-bottom: 4px solid #033540;
+    background: url("../img/Pictures/pic-03.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+.condensatory{
+    float: right;
+    margin: 20px;
+    width: 16vw;
+}
+
+#fixed-pic-4 {
+    height: 300px;
+    width: 90vw;
+    margin-left: 5vw;
+    border: 4px solid #033540;
+    
+    background: url("../img/Pictures/pic-04.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+#fixed-pic-5 {
+    height: 300px;
+    width: 90vw;
+    margin-left: 5vw;
+    border: 4px solid #033540;
+    
+    background: url("../img/Pictures/pic-05.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+#fixed-pic-6 {
+    height: 300px;
+    border: 4px solid #033540;
+    
+    background: url("../img/Pictures/pic-06.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.link-BP{
+    color: #033540;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.link-BP:hover{
+    font-size: 20px;
+    color: #A7D1D2;
+}
+
+#fixed-pic-7 {
+    height: 300px;
+    border: 4px solid #033540;
+    
+    background: url("../img/Pictures/pic-07.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}    
+#fixed-pic-8 {
+    height: 300px;
+    width: 90vw;
+    margin-left: 5vw;
+    border: 4px solid #033540;
+    
+    background: url("../img/Pictures/pic-08.webp") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}    
+
+/*Гайд по підбору деталів*/
+.CPU, .kuler, .plyta, .RAM, .SSD-HDD, .Grafika, .Zasilac, .Korpus
+ {
+    border-radius: 15px; 
+    background-color: #63898C;
+    color: #E0F4F5;
+    padding: 6vh 3vw;
+}    
+
+.text-padding{
+    padding: 0px 50px 10px 10px; 
+    }
+.ul-padding-1{
+    list-style-image: url(../img/Lista/blok.webp); 
+    margin: 0px 0px 0px 30px;
+}
+.wertuszka{
+    list-style-image: url(../img/Lista/wertuszka.webp); 
+    margin: 20px 0px 0px 30px;
+}
+.line{
+    list-style-image: url(../img/Lista/Лінійка.webp); 
+    margin: 20px 0px 0px 30px;
+}
+.case{
+    list-style-image: url(../img/Lista/Корпус.webp); 
+    margin: 20px 0px 0px 30px;
+}
+.wind{
+    list-style-image: url(../img/Lista/Вітер.webp); 
+    margin: 20px 0px 0px 30px;
+}
+.stars{
+    list-style-image: url(../img/Lista/Зірочки.webp); 
+    margin: 20px 0px 0px 30px;
+}
+
+.podval{
+    height: 250px;
+    background: #033540;
+}
